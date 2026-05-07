@@ -87,12 +87,11 @@
     }
     .scroll-reveal.delay-1 { transition-delay: 0.1s; }
     .scroll-reveal.delay-2 { transition-delay: 0.2s; }
-    .scroll-reveal.delay-3 { transition-delay: 0.3s; }
 
     .photo-strip {
       display: flex;
       gap: 16px;
-      animation: scrollStrip 40s linear infinite;
+      animation: scrollStrip 50s linear infinite;
     }
     @keyframes scrollStrip {
       0% { transform: translateX(0); }
@@ -136,30 +135,30 @@
 <body class="bg-white overflow-x-hidden">
 
   <!-- HEADER -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-navy/5">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+  <header class="sticky top-0 z-50 border-b border-white/10" style="background: rgba(15,27,61,0.95); backdrop-filter: blur(12px);">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
       <a href="#" class="flex-shrink-0">
-        <img src="Genuine%20cup%202026%20logo.jpg" alt="Genuine Cup Houston 2026" class="h-10 md:h-12 w-auto">
+        <img src="The%20Genuine%20Foundation%20Logo%20White%20Words.png" alt="The Genuine Foundation" class="h-10 md:h-11 w-auto">
       </a>
       <nav class="hidden md:flex items-center gap-8">
-        <a href="#roles" class="text-sm font-medium text-navy/60 hover:text-navy focus-ring rounded transition-colors duration-200">Volunteer Roles</a>
-        <a href="#gallery" class="text-sm font-medium text-navy/60 hover:text-navy focus-ring rounded transition-colors duration-200">Gallery</a>
+        <a href="#roles" class="text-sm font-medium text-white/60 hover:text-white focus-ring rounded transition-colors duration-200">Volunteer Roles</a>
+        <a href="#gallery" class="text-sm font-medium text-white/60 hover:text-white focus-ring rounded transition-colors duration-200">Gallery</a>
         <a href="#roles" class="btn-spring focus-ring inline-block bg-gold text-navy font-semibold px-5 py-2.5 rounded-lg text-sm" style="box-shadow:0 2px 8px rgba(245,197,24,0.25);">Become a Volunteer</a>
       </nav>
-      <button id="mobileMenuBtn" class="md:hidden focus-ring rounded p-2 text-navy" aria-label="Open menu">
+      <button id="mobileMenuBtn" class="md:hidden focus-ring rounded p-2 text-white" aria-label="Open menu">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
-    <div id="mobileMenu" class="hidden md:hidden border-t border-navy/5 px-6 py-4 space-y-3 bg-white">
-      <a href="#roles" class="block text-sm font-medium text-navy/70 hover:text-navy">Volunteer Roles</a>
-      <a href="#gallery" class="block text-sm font-medium text-navy/70 hover:text-navy">Gallery</a>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 px-6 py-4 space-y-3" style="background: rgba(15,27,61,0.98);">
+      <a href="#roles" class="block text-sm font-medium text-white/70 hover:text-white">Volunteer Roles</a>
+      <a href="#gallery" class="block text-sm font-medium text-white/70 hover:text-white">Gallery</a>
       <a href="#roles" class="block text-center bg-gold text-navy font-semibold px-5 py-2.5 rounded-lg text-sm mt-2">Become a Volunteer</a>
     </div>
   </header>
 
   <!-- HERO SECTION -->
   <section class="relative overflow-hidden grain" style="background: linear-gradient(135deg, #F3F5FA 0%, #FFFFFF 40%, #FDF8EE 100%);">
-    <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-30" style="background: radial-gradient(circle, rgba(245,197,24,0.15) 0%, transparent 70%); transform: translate(30%, -30%);"></div>
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-30" style="background: radial-gradient(circle, rgba(9,132,227,0.12) 0%, transparent 70%); transform: translate(30%, -30%);"></div>
     <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-20" style="background: radial-gradient(circle, rgba(30,48,86,0.08) 0%, transparent 70%); transform: translate(-30%, 30%);"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 md:py-28 lg:py-32">
@@ -167,16 +166,16 @@
 
         <!-- Text -->
         <div class="flex-1 text-center lg:text-left max-w-xl">
-          <div class="inline-flex items-center gap-2 bg-gold/10 text-gold-dark rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest mb-6">
+          <div class="inline-flex items-center gap-2 bg-navy/5 text-navy-mid rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest mb-6">
             <span class="w-2 h-2 rounded-full bg-gold"></span>
             2026 Edition
           </div>
           <h1 class="heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] text-navy">
             GIVE YOUR TIME.<br>
-            <span style="background: linear-gradient(90deg, #F5C518 0%, #FF6B35 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CREATE REAL IMPACT.</span>
+            <span style="background: linear-gradient(90deg, #0984E3 0%, #2A3F6E 50%, #F5C518 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CREATE REAL IMPACT.</span>
           </h1>
           <p class="mt-6 text-navy/55 text-lg md:text-xl font-light max-w-lg mx-auto lg:mx-0" style="line-height:1.75;">
-            Join the volunteer community behind Genuine Connect and Genuine Cup and help create unforgettable experiences through sport, inclusion, and teamwork.
+            Join the volunteer community behind Genuine Connect and Genuine Cup in a celebration of inclusion, friendship, and the power of sport to unite people across cultures and borders.
           </p>
           <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="#roles" class="btn-spring focus-ring inline-flex items-center justify-center gap-2 bg-navy text-white font-semibold px-8 py-4 rounded-xl text-base" style="box-shadow: 0 4px 20px rgba(15,27,61,0.25), 0 1px 3px rgba(15,27,61,0.1);">
@@ -220,32 +219,32 @@
   <section class="overflow-hidden py-5" style="background:#0F1B3D;">
     <div class="photo-strip" style="width: max-content;">
       <img src="A56I5576.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A8684.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5583.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5593.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5648.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A8769.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5711.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5716.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A8841.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5739.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A9054.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5756.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A9087.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5792.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="1.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5800.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I6054.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5639.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A9105.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5716.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <!-- Duplicate for seamless loop -->
       <img src="A56I5576.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A8684.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5583.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5593.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5648.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A8769.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5711.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5716.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A8841.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5739.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A9054.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5756.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A9087.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <img src="A56I5792.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="1.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5800.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I6054.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
-      <img src="A56I5639.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="EB8A9105.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5716.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
     </div>
   </section>
 
@@ -285,7 +284,7 @@
         <!-- ROLE 2: Field Volunteer -->
         <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-1" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
           <div class="h-64 md:h-72 overflow-hidden relative">
-            <img src="1.jpg" alt="Field volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
+            <img src="EB8A8684.jpg" alt="Field volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.8) 0%, rgba(15,27,61,0.1) 50%, transparent 100%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">02</span>
             <div class="absolute bottom-0 left-0 right-0 p-6">
@@ -304,19 +303,19 @@
         </div>
       </div>
 
-      <!-- BOTTOM ROW: Referee + Match Supervisor + Genuine Connect (smaller) -->
+      <!-- BOTTOM ROW: Referee + Match Supervisor + Genuine Connect (smaller, aligned) -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
         <!-- ROLE 3: Referee -->
-        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-44 overflow-hidden relative">
-            <img src="A56I5800.jpg" alt="Referee role" class="img-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal flex flex-col" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
+          <div class="h-44 overflow-hidden relative flex-shrink-0">
+            <img src="A56I5593.jpg" alt="Referee role" class="img-cover transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">03</span>
           </div>
-          <div class="p-5">
+          <div class="p-5 flex flex-col flex-1">
             <h3 class="heading text-lg font-bold text-navy mb-1">Referee</h3>
-            <p class="text-navy/50 text-sm mb-4" style="line-height:1.6;">Referee matches and help ensure fair play.</p>
+            <p class="text-navy/50 text-sm mb-4 flex-1" style="line-height:1.6;">Referee matches and help ensure fair play.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0hEF_SAwOnscajg_er-37heEd8Wid56KZN0zEUErYsF2Djw/viewform" target="_blank" rel="noopener"
               class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm w-full justify-center"
               style="box-shadow: 0 2px 10px rgba(15,27,61,0.15);">
@@ -327,15 +326,15 @@
         </div>
 
         <!-- ROLE 4: Match Supervisor -->
-        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-1" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-44 overflow-hidden relative">
-            <img src="A56I5716.jpg" alt="Match supervisor" class="img-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-1 flex flex-col" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
+          <div class="h-44 overflow-hidden relative flex-shrink-0">
+            <img src="A56I5648.jpg" alt="Match supervisor" class="img-cover transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">04</span>
           </div>
-          <div class="p-5">
+          <div class="p-5 flex flex-col flex-1">
             <h3 class="heading text-lg font-bold text-navy mb-1">Match Supervisor</h3>
-            <p class="text-navy/50 text-sm mb-4" style="line-height:1.6;">Help manage match reports and supervise games.</p>
+            <p class="text-navy/50 text-sm mb-4 flex-1" style="line-height:1.6;">Help manage match reports and supervise games.</p>
             <a href="https://forms.gle/KeTSyZBFi6L1c68J8" target="_blank" rel="noopener"
               class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm w-full justify-center"
               style="box-shadow: 0 2px 10px rgba(15,27,61,0.15);">
@@ -346,15 +345,15 @@
         </div>
 
         <!-- ROLE 5: Genuine Connect Volunteer -->
-        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-2 sm:col-span-2 lg:col-span-1" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-44 overflow-hidden relative">
-            <img src="A56I5583.jpg" alt="Genuine Connect Volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
+        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-2 sm:col-span-2 lg:col-span-1 flex flex-col" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
+          <div class="h-44 overflow-hidden relative flex-shrink-0">
+            <img src="072925_PaulRDavisPhoto_Genuine_Foundation-107.jpg" alt="Genuine Connect Volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-navy tracking-widest uppercase bg-gold/90 backdrop-blur-sm px-3 py-1 rounded-full">05</span>
           </div>
-          <div class="p-5">
+          <div class="p-5 flex flex-col flex-1">
             <h3 class="heading text-lg font-bold text-navy mb-1">Genuine Connect Volunteer</h3>
-            <p class="text-navy/50 text-sm mb-4" style="line-height:1.6;">Support the conference and help drive meaningful change through community and inclusion.</p>
+            <p class="text-navy/50 text-sm mb-4 flex-1" style="line-height:1.6;">Support the conference and help drive meaningful change.</p>
             <button id="openModalBtn" type="button"
               class="btn-spring focus-ring inline-flex items-center gap-2 bg-gold text-navy font-semibold px-5 py-2.5 rounded-lg text-sm w-full justify-center"
               style="box-shadow: 0 2px 10px rgba(245,197,24,0.3);">
@@ -378,7 +377,7 @@
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 scroll-reveal">
         <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative group" style="min-height:320px;">
-          <img src="A56I5639.jpg" alt="Team photo at Rice Stadium" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <img src="EB8A8769.jpg" alt="Event moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.6) 0%, transparent 50%);"></div>
           <div class="absolute bottom-4 left-4 right-4">
             <p class="text-white font-semibold text-sm">Teams united at Rice Stadium</p>
@@ -386,11 +385,11 @@
           </div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
-          <img src="A56I5593.jpg" alt="Japan team with flags" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <img src="A56I5583.jpg" alt="Team moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.3) 0%, transparent 70%);"></div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
-          <img src="A56I6054.jpg" alt="Player celebrating" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <img src="EB8A8841.jpg" alt="Celebration" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.2) 0%, transparent 70%);"></div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
@@ -398,12 +397,11 @@
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.3) 0%, transparent 70%);"></div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
-          <img src="A56I5648.jpg" alt="Community moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <img src="EB8A9054.jpg" alt="Community moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.2) 0%, transparent 70%);"></div>
         </div>
       </div>
 
-      <!-- Additional photo row -->
       <div class="grid grid-cols-3 gap-3 md:gap-4 mt-3 md:mt-4 scroll-reveal">
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:180px;">
           <img src="A56I5576.jpg" alt="Sport moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
@@ -424,7 +422,7 @@
   <!-- FOOTER -->
   <footer style="background:#0F1B3D; border-top: 1px solid rgba(255,255,255,0.05);">
     <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
-      <img src="Genuine%20cup%202026%20logo.jpg" alt="Genuine Cup Houston 2026" class="h-8 w-auto opacity-80">
+      <img src="The%20Genuine%20Foundation%20Logo%20White%20Words.png" alt="The Genuine Foundation" class="h-8 w-auto opacity-70">
       <p class="text-white/35 text-sm">&copy; 2026 Genuine Foundation. All rights reserved.</p>
       <p class="text-white/30 text-xs">Expanding opportunity for neurodiverse talent.</p>
     </div>
