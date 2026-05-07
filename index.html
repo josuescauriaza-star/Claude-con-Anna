@@ -62,6 +62,7 @@
     }
     .role-card:hover {
       transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(15,27,61,0.12), 0 2px 6px rgba(15,27,61,0.06) !important;
     }
 
     .photo-float {
@@ -75,11 +76,6 @@
       50% { transform: translateY(-12px); }
     }
 
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     .scroll-reveal {
       opacity: 0;
       transform: translateY(30px);
@@ -89,11 +85,14 @@
       opacity: 1;
       transform: translateY(0);
     }
+    .scroll-reveal.delay-1 { transition-delay: 0.1s; }
+    .scroll-reveal.delay-2 { transition-delay: 0.2s; }
+    .scroll-reveal.delay-3 { transition-delay: 0.3s; }
 
     .photo-strip {
       display: flex;
       gap: 16px;
-      animation: scrollStrip 30s linear infinite;
+      animation: scrollStrip 40s linear infinite;
     }
     @keyframes scrollStrip {
       0% { transform: translateX(0); }
@@ -207,24 +206,19 @@
         <!-- Photo Composition -->
         <div class="flex-1 relative w-full max-w-lg lg:max-w-xl">
           <div class="grid grid-cols-12 grid-rows-6 gap-3 h-[420px] md:h-[480px]">
-            <!-- Main large image -->
             <div class="col-span-7 row-span-4 rounded-2xl overflow-hidden photo-float" style="box-shadow: 0 8px 32px rgba(15,27,61,0.12);">
               <img src="A56I5639.jpg" alt="Teams celebrating at Rice Stadium" class="img-cover">
             </div>
-            <!-- Top right -->
             <div class="col-span-5 row-span-3 rounded-2xl overflow-hidden photo-float photo-float-delay" style="box-shadow: 0 6px 24px rgba(15,27,61,0.1);">
               <img src="1.jpg" alt="Volunteer on the field" class="img-cover">
             </div>
-            <!-- Bottom right -->
             <div class="col-span-5 row-span-3 rounded-2xl overflow-hidden photo-float photo-float-delay2" style="box-shadow: 0 6px 24px rgba(15,27,61,0.1);">
               <img src="A56I6054.jpg" alt="Player celebrating" class="img-cover">
             </div>
-            <!-- Bottom left -->
             <div class="col-span-7 row-span-2 rounded-2xl overflow-hidden photo-float photo-float-delay" style="box-shadow: 0 6px 24px rgba(15,27,61,0.1);">
               <img src="A56I5800.jpg" alt="Match day at stadium" class="img-cover">
             </div>
           </div>
-          <!-- Floating accent card -->
           <div class="absolute -bottom-4 -left-4 bg-white rounded-xl px-5 py-3 flex items-center gap-3 z-20" style="box-shadow: 0 4px 20px rgba(15,27,61,0.1);">
             <div class="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center">
               <svg class="w-5 h-5 text-gold-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
@@ -240,35 +234,35 @@
   </section>
 
   <!-- PHOTO STRIP -->
-  <section class="overflow-hidden py-6" style="background:#0F1B3D;">
+  <section class="overflow-hidden py-5" style="background:#0F1B3D;">
     <div class="photo-strip" style="width: max-content;">
-      <img src="A56I5576.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5583.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5593.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5648.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5711.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5716.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5739.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5756.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5792.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="1.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5800.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I6054.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5639.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
+      <img src="A56I5576.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5583.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5593.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5648.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5711.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5716.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5739.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5756.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5792.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="1.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5800.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I6054.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5639.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
       <!-- Duplicate for seamless loop -->
-      <img src="A56I5576.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5583.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5593.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5648.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5711.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5716.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5739.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5756.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5792.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="1.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5800.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I6054.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
-      <img src="A56I5639.jpg" alt="" class="rounded-xl h-[160px] w-auto object-cover flex-shrink-0">
+      <img src="A56I5576.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5583.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5593.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5648.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5711.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5716.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5739.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5756.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5792.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="1.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5800.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I6054.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
+      <img src="A56I5639.jpg" alt="Genuine Cup moment" class="rounded-xl h-[160px] w-[240px] object-cover flex-shrink-0">
     </div>
   </section>
 
@@ -281,21 +275,24 @@
         <p class="mt-5 text-navy/50 text-lg font-light" style="line-height:1.7;">Choose the role that fits your skills, passion, and availability.</p>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <!-- TOP ROW: Ambassador + Field Volunteer (prominent) -->
+      <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-6">
 
         <!-- ROLE 1: Ambassador -->
         <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-48 overflow-hidden relative">
+          <div class="h-64 md:h-72 overflow-hidden relative">
             <img src="A56I5792.jpg" alt="Ambassador role" class="img-cover transition-transform duration-500 group-hover:scale-105">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.8) 0%, rgba(15,27,61,0.1) 50%, transparent 100%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">01</span>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="heading text-2xl md:text-3xl font-bold text-white mb-1">Ambassador</h3>
+              <p class="text-white/70 text-sm" style="line-height:1.6;">Support and accompany a team throughout the week.</p>
+            </div>
           </div>
           <div class="p-6">
-            <h3 class="heading text-xl font-bold text-navy mb-2">Ambassador</h3>
-            <p class="text-navy/50 text-sm mb-5" style="line-height:1.65;">Support and accompany a team throughout the week.</p>
             <a href="https://forms.gle/BdoWp3HKgGVGNGLs6" target="_blank" rel="noopener"
-              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-3 rounded-lg text-sm w-full justify-center"
-              style="box-shadow: 0 2px 10px rgba(15,27,61,0.15);">
+              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-6 py-3.5 rounded-lg text-sm w-full justify-center"
+              style="box-shadow: 0 2px 12px rgba(15,27,61,0.18);">
               Apply as Ambassador
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
@@ -303,36 +300,42 @@
         </div>
 
         <!-- ROLE 2: Field Volunteer -->
-        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-48 overflow-hidden relative">
+        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-1" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
+          <div class="h-64 md:h-72 overflow-hidden relative">
             <img src="1.jpg" alt="Field volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
-            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.8) 0%, rgba(15,27,61,0.1) 50%, transparent 100%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">02</span>
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="heading text-2xl md:text-3xl font-bold text-white mb-1">Field Volunteer</h3>
+              <p class="text-white/70 text-sm" style="line-height:1.6;">Help with anything needed along the tournament — balls, water, logistics, and general support.</p>
+            </div>
           </div>
           <div class="p-6">
-            <h3 class="heading text-xl font-bold text-navy mb-2">Field Volunteer</h3>
-            <p class="text-navy/50 text-sm mb-5" style="line-height:1.65;">Help with anything needed along the tournament — balls, water, logistics, and general support whenever you are available.</p>
             <a href="https://timecounts.app/genuine-cup-2026" target="_blank" rel="noopener"
-              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-3 rounded-lg text-sm w-full justify-center"
-              style="box-shadow: 0 2px 10px rgba(15,27,61,0.15);">
+              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-6 py-3.5 rounded-lg text-sm w-full justify-center"
+              style="box-shadow: 0 2px 12px rgba(15,27,61,0.18);">
               Join as Field Volunteer
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
           </div>
         </div>
+      </div>
+
+      <!-- BOTTOM ROW: Referee + Match Supervisor + Genuine Connect (smaller) -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
         <!-- ROLE 3: Referee -->
         <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-48 overflow-hidden relative">
+          <div class="h-44 overflow-hidden relative">
             <img src="A56I5800.jpg" alt="Referee role" class="img-cover transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">03</span>
           </div>
-          <div class="p-6">
-            <h3 class="heading text-xl font-bold text-navy mb-2">Referee</h3>
-            <p class="text-navy/50 text-sm mb-5" style="line-height:1.65;">Referee matches and help ensure fair play.</p>
+          <div class="p-5">
+            <h3 class="heading text-lg font-bold text-navy mb-1">Referee</h3>
+            <p class="text-navy/50 text-sm mb-4" style="line-height:1.6;">Referee matches and help ensure fair play.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0hEF_SAwOnscajg_er-37heEd8Wid56KZN0zEUErYsF2Djw/viewform" target="_blank" rel="noopener"
-              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-3 rounded-lg text-sm w-full justify-center"
+              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm w-full justify-center"
               style="box-shadow: 0 2px 10px rgba(15,27,61,0.15);">
               Apply as Referee
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -341,17 +344,17 @@
         </div>
 
         <!-- ROLE 4: Match Supervisor -->
-        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="h-48 overflow-hidden relative">
+        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-1" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
+          <div class="h-44 overflow-hidden relative">
             <img src="A56I5716.jpg" alt="Match supervisor" class="img-cover transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
             <span class="absolute top-4 left-4 heading text-xs font-semibold text-gold tracking-widest uppercase bg-navy/80 backdrop-blur-sm px-3 py-1 rounded-full">04</span>
           </div>
-          <div class="p-6">
-            <h3 class="heading text-xl font-bold text-navy mb-2">Match Supervisor</h3>
-            <p class="text-navy/50 text-sm mb-5" style="line-height:1.65;">Help manage match reports and supervise games.</p>
+          <div class="p-5">
+            <h3 class="heading text-lg font-bold text-navy mb-1">Match Supervisor</h3>
+            <p class="text-navy/50 text-sm mb-4" style="line-height:1.6;">Help manage match reports and supervise games.</p>
             <a href="https://forms.gle/KeTSyZBFi6L1c68J8" target="_blank" rel="noopener"
-              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-3 rounded-lg text-sm w-full justify-center"
+              class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-5 py-2.5 rounded-lg text-sm w-full justify-center"
               style="box-shadow: 0 2px 10px rgba(15,27,61,0.15);">
               Apply as Match Supervisor
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
@@ -360,23 +363,21 @@
         </div>
 
         <!-- ROLE 5: Genuine Connect Volunteer -->
-        <div class="role-card group rounded-2xl overflow-hidden bg-white relative sm:col-span-2 lg:col-span-2 scroll-reveal" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
-          <div class="flex flex-col md:flex-row h-full">
-            <div class="h-48 md:h-auto md:w-1/2 overflow-hidden relative flex-shrink-0">
-              <img src="A56I5583.jpg" alt="Genuine Connect Volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.5) 0%, transparent 60%);"></div>
-              <span class="absolute top-4 left-4 heading text-xs font-semibold text-navy tracking-widest uppercase bg-gold/90 backdrop-blur-sm px-3 py-1 rounded-full">05</span>
-            </div>
-            <div class="p-6 md:p-8 flex flex-col justify-center">
-              <h3 class="heading text-xl font-bold text-navy mb-2">Genuine Connect Volunteer</h3>
-              <p class="text-navy/50 text-sm mb-5" style="line-height:1.65;">Support the conference and help drive meaningful change through community and inclusion.</p>
-              <button id="openModalBtn" type="button"
-                class="btn-spring focus-ring inline-flex items-center gap-2 bg-gold text-navy font-semibold px-5 py-3 rounded-lg text-sm w-full justify-center md:w-auto"
-                style="box-shadow: 0 2px 10px rgba(245,197,24,0.3);">
-                Apply for Genuine Connect
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-              </button>
-            </div>
+        <div class="role-card group rounded-2xl overflow-hidden bg-white relative scroll-reveal delay-2 sm:col-span-2 lg:col-span-1" style="box-shadow: 0 4px 24px rgba(15,27,61,0.06), 0 1px 3px rgba(15,27,61,0.04);">
+          <div class="h-44 overflow-hidden relative">
+            <img src="A56I5583.jpg" alt="Genuine Connect Volunteer" class="img-cover transition-transform duration-500 group-hover:scale-105">
+            <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.7) 0%, transparent 60%);"></div>
+            <span class="absolute top-4 left-4 heading text-xs font-semibold text-navy tracking-widest uppercase bg-gold/90 backdrop-blur-sm px-3 py-1 rounded-full">05</span>
+          </div>
+          <div class="p-5">
+            <h3 class="heading text-lg font-bold text-navy mb-1">Genuine Connect Volunteer</h3>
+            <p class="text-navy/50 text-sm mb-4" style="line-height:1.6;">Support the conference and help drive meaningful change through community and inclusion.</p>
+            <button id="openModalBtn" type="button"
+              class="btn-spring focus-ring inline-flex items-center gap-2 bg-gold text-navy font-semibold px-5 py-2.5 rounded-lg text-sm w-full justify-center"
+              style="box-shadow: 0 2px 10px rgba(245,197,24,0.3);">
+              Apply for Genuine Connect
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </button>
           </div>
         </div>
 
@@ -394,7 +395,7 @@
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 scroll-reveal">
         <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative group" style="min-height:320px;">
-          <img src="A56I5639.jpg" alt="Team photo" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <img src="A56I5639.jpg" alt="Team photo at Rice Stadium" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
           <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.6) 0%, transparent 50%);"></div>
           <div class="absolute bottom-4 left-4 right-4">
             <p class="text-white font-semibold text-sm">Teams united at Rice Stadium</p>
@@ -403,47 +404,42 @@
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
           <img src="A56I5593.jpg" alt="Japan team with flags" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
-          <div class="absolute inset-0 bg-navy/20 mix-blend-multiply"></div>
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.3) 0%, transparent 70%);"></div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
           <img src="A56I6054.jpg" alt="Player celebrating" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
-          <div class="absolute inset-0 bg-navy/10 mix-blend-multiply"></div>
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.2) 0%, transparent 70%);"></div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
           <img src="A56I5756.jpg" alt="Teams lined up" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
-          <div class="absolute inset-0 bg-navy/20 mix-blend-multiply"></div>
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.3) 0%, transparent 70%);"></div>
         </div>
         <div class="rounded-2xl overflow-hidden relative group" style="min-height:150px;">
-          <img src="A56I5648.jpg" alt="Volunteer on field" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
-          <div class="absolute inset-0 bg-navy/10 mix-blend-multiply"></div>
+          <img src="A56I5648.jpg" alt="Community moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.2) 0%, transparent 70%);"></div>
         </div>
       </div>
 
-      <!-- Inspirational quote -->
-      <div class="mt-16 text-center scroll-reveal">
-        <blockquote class="heading text-2xl md:text-3xl font-medium text-white/90 max-w-3xl mx-auto leading-snug">
-          "Every volunteer makes a difference. Every moment of inclusion creates a memory that lasts a lifetime."
-        </blockquote>
-        <p class="mt-4 text-gold text-sm font-semibold uppercase tracking-widest">— Genuine Foundation</p>
+      <!-- Additional photo row -->
+      <div class="grid grid-cols-3 gap-3 md:gap-4 mt-3 md:mt-4 scroll-reveal">
+        <div class="rounded-2xl overflow-hidden relative group" style="min-height:180px;">
+          <img src="A56I5576.jpg" alt="Sport moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.3) 0%, transparent 70%);"></div>
+        </div>
+        <div class="rounded-2xl overflow-hidden relative group" style="min-height:180px;">
+          <img src="A56I5711.jpg" alt="Inclusion moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.2) 0%, transparent 70%);"></div>
+        </div>
+        <div class="rounded-2xl overflow-hidden relative group" style="min-height:180px;">
+          <img src="A56I5739.jpg" alt="Teamwork moment" class="img-cover transition-transform duration-700 group-hover:scale-105" style="height:100%;">
+          <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,27,61,0.3) 0%, transparent 70%);"></div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA BANNER -->
-  <section class="relative overflow-hidden" style="background: linear-gradient(135deg, #F5C518 0%, #FFD94A 50%, #F5C518 100%);">
-    <div class="absolute inset-0 opacity-[0.04]" style="background-image: url(&quot;data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n2)'/%3E%3C/svg%3E&quot;);"></div>
-    <div class="relative z-10 max-w-4xl mx-auto px-6 py-16 md:py-20 text-center">
-      <h2 class="heading text-3xl md:text-5xl font-bold text-navy mb-4">Ready to Make a Difference?</h2>
-      <p class="text-navy/65 text-lg font-light mb-8 max-w-xl mx-auto" style="line-height:1.7;">Pick a role above that matches your passion and sign up today. Together, we create something extraordinary.</p>
-      <a href="#roles" class="btn-spring focus-ring inline-flex items-center gap-2 bg-navy text-white font-semibold px-8 py-4 rounded-xl text-base" style="box-shadow: 0 4px 20px rgba(15,27,61,0.3);">
-        View Volunteer Roles
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
-      </a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer style="background:#0F1B3D;">
+  <footer style="background:#0F1B3D; border-top: 1px solid rgba(255,255,255,0.05);">
     <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <span class="heading text-sm font-bold text-white">GENUINE</span>
@@ -501,7 +497,6 @@
           Submit Application
         </button>
       </form>
-      <!-- Success state -->
       <div id="connectSuccess" class="hidden p-8 text-center">
         <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-green-50 flex items-center justify-center">
           <svg class="w-7 h-7 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
@@ -514,12 +509,10 @@
   </div>
 
   <script>
-    // Mobile menu
     document.getElementById('mobileMenuBtn').addEventListener('click', function() {
       document.getElementById('mobileMenu').classList.toggle('hidden');
     });
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(function(a) {
       a.addEventListener('click', function(e) {
         e.preventDefault();
@@ -531,7 +524,6 @@
       });
     });
 
-    // Modal
     var overlay = document.getElementById('modalOverlay');
     var form = document.getElementById('connectForm');
     var success = document.getElementById('connectSuccess');
@@ -555,7 +547,6 @@
       success.classList.remove('hidden');
     });
 
-    // Scroll reveal
     var reveals = document.querySelectorAll('.scroll-reveal');
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
